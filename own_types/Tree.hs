@@ -23,3 +23,7 @@ module Tree (
     | x == a  = True
     | x < a   = treeElem x left
     | x > a   = treeElem x right
+
+  instance Functor Tree where
+    fmap f Empty = Empty
+    fmap f (Node x left right) = Node (f x) (fmap f left) (fmap f right)
