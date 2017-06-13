@@ -11,4 +11,4 @@ ceasarCipherEncode shift msg =
     in map chr shifted
 
 ceasarCipherDecode :: Int -> String -> String
-ceasarCipherDecode shift msg = ceasarCipherEncode (negate shift) msg
+ceasarCipherDecode shift = ceasarCipherEncode (negate shift)
