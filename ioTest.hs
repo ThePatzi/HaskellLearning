@@ -1,0 +1,4 @@
+main = readString
+
+readString = getLine
+

@@ -1,3 +1,4 @@
+main :: IO ()
 main = do
   putStrLn "Input:"
 
@@ -10,4 +11,4 @@ main = do
         main
 
 reverseString :: String -> String
-reverseString     =  foldr (++) []
+reverseString = foldr (\c cs -> cs ++ [c]) []
